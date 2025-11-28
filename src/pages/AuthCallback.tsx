@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
+import { useNavigation } from '@/contexts/NavigationContext';
 
 const AuthCallback = () => {
-  const navigate = useNavigate();
+  const { navigate } = useNavigation();
 
   useEffect(() => {
     // Extract URL parameters
